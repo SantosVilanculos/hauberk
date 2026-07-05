@@ -3,7 +3,7 @@
 [![Last commit](https://www.shieldcn.dev/github/last-commit/santosvilanculos/hauberk.svg?variant=secondary&size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/actions)
 [![License](https://www.shieldcn.dev/github/license/santosvilanculos/hauberk.svg?variant=ghost&size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/blob/main/LICENSE)
 [![Release](https://www.shieldcn.dev/github/release/santosvilanculos/hauberk.svg?size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/releases/latest)
-[![Downloads](https://shieldcn.dev/github/downloads/santosvilanculos/hauberk.svg)](https://github.com/SantosVilanculos/hauberk/releases/latest)
+<!-- [![Downloads](https://shieldcn.dev/github/downloads/santosvilanculos/hauberk.svg)](https://github.com/SantosVilanculos/hauberk/releases/latest) -->
 [![Build](https://www.shieldcn.dev/github/ci/santosvilanculos/hauberk.svg?variant=secondary&size=sm&font=geist&label=build&workflow=release.yml)](https://github.com/SantosVilanculos/hauberk/commits/main)
 
 A high-performance Manifest V3 browser extension that automatically redirects `npmjs.com` package pages to `npmx.dev` (supporting both unscoped and scoped packages, while preserving version, subpaths, and query strings).
