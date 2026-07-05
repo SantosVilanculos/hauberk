@@ -6,6 +6,7 @@ node_modules/
 *.zip
 *.crx
 *.xpi
+_metadata/
 
 # OS files
 .DS_Store

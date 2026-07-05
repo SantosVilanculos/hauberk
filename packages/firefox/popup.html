@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>npmx Redirector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Glow Effect in the background -->
+    <div class="radial-glow"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo-area">
+        <img src="icons/icon.svg" alt="npmx Redirector Logo" class="app-logo">
+        <div class="title-area">
+          <h1 class="app-name">npm<span>x</span></h1>
+          <p class="tagline">Redirector</p>
+        </div>
+      </div>
+      <div id="status-badge" class="status-badge active">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Active</span>
+      </div>
+    </header>
+
+    <!-- Main Controller Section -->
+    <main class="main-content">
+      <div class="control-card">
+        <div class="card-details">
+          <h2 class="card-title">Auto-Redirect</h2>
+          <p class="card-desc">Instantly route npmjs.com/package package pages to npmx.dev</p>
+        </div>
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" id="toggle-redirect" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Stats Area -->
+      <div class="stats-card">
+        <div class="stats-icon">🚀</div>
+        <div class="stats-info">
+          <span class="stats-label">Redirects Processed</span>
+          <span id="redirect-count" class="stats-value">0</span>
+        </div>
+        <button id="reset-counter" class="reset-btn" title="Reset Counter">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="actions-grid">
+        <a href="https://npmx.dev" target="_blank" class="action-btn outline-btn">
+          <span>Go to npmx.dev</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-tip">Tip: Click any npmjs.com package link to test!</p>
+      <div class="footer-links">
+        <span>v1.0.0</span>
+        <span class="separator">•</span>
+        <a href="https://github.com/npmx-dev" target="_blank">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

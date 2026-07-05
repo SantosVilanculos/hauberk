@@ -1,0 +1,19 @@
+{
+  "name": "firefox",
+  "version": "1.0.0",
+  "description": "Firefox extension to automatically redirect npmjs.com package links to npmx.dev.",
+  "author": "Santos Vilanculos <santosvilanculos@yahoo.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/santosvilanculos/hauberk/tree/main/packages/firefox#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santosvilanculos/hauberk.git",
+    "directory": "packages/firefox"
+  },
+  "bugs": {
+    "url": "https://github.com/santosvilanculos/hauberk/issues"
+  },
+  "scripts": {
+    "zip": "zip -r ../../npmx-redirector-firefox.zip manifest.json rules.json background.js popup.html popup.css popup.js icons/"
+  }
+}
