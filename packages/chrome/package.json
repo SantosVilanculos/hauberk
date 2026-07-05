@@ -1,5 +1,5 @@
 {
-  "name": "chrome",
+  "name": "@hauberk/chrome",
   "version": "1.0.0",
   "description": "Chrome extension to automatically redirect npmjs.com package links to npmx.dev.",
   "author": "Santos Vilanculos <santosvilanculos@yahoo.com>",
@@ -14,6 +14,6 @@
     "url": "https://github.com/santosvilanculos/hauberk/issues"
   },
   "scripts": {
-    "zip": "zip -r ../../npmx-redirector-chrome.zip manifest.json rules.json background.js popup.html popup.css popup.js icons/"
+    "zip": "zip -r ../../hauberk-chrome.zip manifest.json rules.json background.js popup.html popup.css popup.js icons/"
   }
 }

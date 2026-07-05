@@ -1,4 +1,4 @@
-# npmx Redirector (Monorepo Workspace)
+# Hauberk (Monorepo Workspace)
 
 A high-performance Manifest V3 browser extension that automatically redirects `npmjs.com` package pages to `npmx.dev` (supporting both unscoped and scoped packages, while preserving version, subpaths, and query strings).
 
@@ -78,8 +78,8 @@ pnpm run zip:all
 ```
 
 The resulting zip files will be named:
-*   `npmx-redirector-chrome.zip`
-*   `npmx-redirector-firefox.zip`
+*   `hauberk-chrome.zip`
+*   `hauberk-firefox.zip`
 
 ---
 

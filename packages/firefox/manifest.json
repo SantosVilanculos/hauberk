@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "npmx Redirector",
+  "name": "Hauberk",
   "version": "1.0.0",
   "description": "Automatically redirects npmjs.com package links to npmx.dev.",
   "permissions": [

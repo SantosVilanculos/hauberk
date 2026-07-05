@@ -26,7 +26,7 @@ function updateRuleset(enabled) {
     if (chrome.runtime.lastError) {
       console.error("Error updating ruleset:", chrome.runtime.lastError);
     } else {
-      console.log(`npmx Redirector: Ruleset updated to ${enabled ? 'enabled' : 'disabled'}`);
+      console.log(`Hauberk: Ruleset updated to ${enabled ? 'enabled' : 'disabled'}`);
     }
   });
 }
@@ -40,7 +40,7 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
         if (result.enabled) {
           const newCount = result.redirectCount + 1;
           chrome.storage.local.set({ redirectCount: newCount });
-          console.log(`npmx Redirector: Redirected! Total: ${newCount}`);
+          console.log(`Hauberk: Redirected! Total: ${newCount}`);
         }
       });
     }
