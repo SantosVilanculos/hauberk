@@ -1,36 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#cb3837" />
-      <stop offset="60%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#06b6d4" />
-    </linearGradient>
-    
-    <!-- Accent Glow Filter -->
-    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#cbd5e1" />
-    </linearGradient>
-  </defs>
-
-  <!-- Main Background Rounded Rect -->
-  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
-  
-  <!-- Subtle inner card border -->
-  <rect x="20" y="20" width="472" height="472" rx="108" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="8" />
-
-  <!-- Stylized Package Box Outline -->
-  <path d="M256 80 L390 150 L390 290 L256 360 L122 290 L122 150 Z" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="12" stroke-linejoin="round" />
-  <path d="M256 80 L256 360" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="12" />
-  <path d="M122 150 L256 220 L390 150" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="12" stroke-linejoin="round" />
-
-  <!-- Overlaying bold and glowing redirect arrow pointing from left to right -->
-  <!-- We place it slightly offset to represent routing -->
-  <path d="M170 256 H270 V200 L370 270 L270 340 V284 H170 Z" fill="url(#arrowGrad)" filter="url(#neonGlow)" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#0a0a0a"/>
+  <rect x="110" y="310" width="60" height="60" fill="#525252"/>
+  <text
+    x="320"
+    y="370"
+    font-family="'Geist Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
+    font-size="420"
+    font-weight="500"
+    text-anchor="middle"
+    fill="#fafafa"
+  ><tspan>/</tspan></text>
 </svg>
