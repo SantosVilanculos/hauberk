@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    branches: [main, development]
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 26
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm run zip:all
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: hauberk-zips
+          path: |
+            hauberk-chrome.zip
+            hauberk-firefox.zip
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: hauberk-zips
+
+      - uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            hauberk-chrome.zip
+            hauberk-firefox.zip
+          generate_release_notes: true
