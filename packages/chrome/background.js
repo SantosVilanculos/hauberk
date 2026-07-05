@@ -31,16 +31,29 @@ function updateRuleset(enabled) {
   });
 }
 
-// Track redirects in real-time
+// Track redirects in real-time and record recent packages
 chrome.webNavigation.onBeforeNavigate.addListener((details) => {
   if (details.frameId === 0) { // Main frame navigations only
     const url = details.url;
-    if (/https?:\/\/(?:www\.)?npmjs\.com\/package\//.test(url)) {
-      chrome.storage.local.get({ enabled: true, redirectCount: 0 }, (result) => {
+    const match = url.match(/https?:\/\/(?:www\.)?npmjs\.com\/package\/([^?]+)/);
+    if (match) {
+      let packageName = match[1].replace(/\/$/, '');
+      packageName = decodeURIComponent(packageName);
+      chrome.storage.local.get({ enabled: true, redirectCount: 0, recentPackages: [] }, (result) => {
         if (result.enabled) {
           const newCount = result.redirectCount + 1;
-          chrome.storage.local.set({ redirectCount: newCount });
-          console.log(`Hauberk: Redirected! Total: ${newCount}`);
+          let recent = result.recentPackages || [];
+          const existing = recent.findIndex(p => p.name === packageName);
+          if (existing !== -1) {
+            const entry = recent.splice(existing, 1)[0];
+            entry.visits = (entry.visits || 1) + 1;
+            entry.lastVisit = Date.now();
+            recent.unshift(entry);
+          } else {
+            recent.unshift({ name: packageName, visits: 1, lastVisit: Date.now() });
+          }
+          if (recent.length > 20) recent = recent.slice(0, 20);
+          chrome.storage.local.set({ redirectCount: newCount, recentPackages: recent });
         }
       });
     }
