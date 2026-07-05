@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+## [0.3.0] - 2026-07-06
+
+### Changed
+- Redesigned popup to match npmx.dev visual style (dark minimal theme, Geist font, blue accent)
+- Updated README description to match repository description
+- Updated popup tagline to reflect official description
+
 ## [0.2.0] - 2026-07-06
 
 ### Added
@@ -41,6 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Official npmx.dev favicon SVG icon
 - Build scripts for packaging extensions into zip archives
 
-[unreleased]: https://github.com/santosvilanculos/hauberk/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/santosvilanculos/hauberk/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/santosvilanculos/hauberk/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/santosvilanculos/hauberk/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/santosvilanculos/hauberk/releases/tag/v0.1.0

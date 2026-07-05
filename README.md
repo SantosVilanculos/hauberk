@@ -4,7 +4,7 @@
 [![Release](https://www.shieldcn.dev/github/release/santosvilanculos/hauberk.svg?size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/releases/latest)
 [![Build](https://www.shieldcn.dev/github/ci/santosvilanculos/hauberk.svg?variant=secondary&size=sm&font=geist&label=build&workflow=release.yml)](https://github.com/SantosVilanculos/hauberk/commits/main)
 
-A high-performance Manifest V3 browser extension that automatically redirects `npmjs.com` package pages to `npmx.dev` (supporting both unscoped and scoped packages, while preserving version, subpaths, and query strings).
+Instantly redirect npmjs.com package pages to npmx.dev.
 
 This repository is structured as a **pnpm workspace monorepo** containing separate versions optimized for Google Chrome and Mozilla Firefox.
 

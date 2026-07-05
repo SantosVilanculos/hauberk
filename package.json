@@ -1,6 +1,6 @@
 {
   "name": "hauberk",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "Monorepo workspace for npmx-redirector Chrome and Firefox extensions.",
   "author": "Santos Vilanculos <santosvilanculos@yahoo.com>",
