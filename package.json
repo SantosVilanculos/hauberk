@@ -1,0 +1,19 @@
+{
+  "name": "npmx-redirector",
+  "version": "1.0.0",
+  "description": "Chrome extension that automatically redirects npmjs.com package links to npmx.dev.",
+  "scripts": {
+    "zip": "zip -r npmx-redirector.zip manifest.json rules.json background.js popup.html popup.css popup.js icons/ README.md"
+  },
+  "keywords": [
+    "chrome-extension",
+    "npm",
+    "npmx",
+    "redirector"
+  ],
+  "author": "Antigravity Pair",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
