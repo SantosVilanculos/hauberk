@@ -1,6 +1,5 @@
-# Hauberk (Monorepo Workspace)
+# Hauberk
 
-[![Last commit](https://www.shieldcn.dev/github/last-commit/santosvilanculos/hauberk.svg?variant=secondary&size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/actions)
 [![License](https://www.shieldcn.dev/github/license/santosvilanculos/hauberk.svg?variant=ghost&size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/blob/main/LICENSE)
 [![Release](https://www.shieldcn.dev/github/release/santosvilanculos/hauberk.svg?size=sm&font=geist)](https://github.com/SantosVilanculos/hauberk/releases/latest)
 [![Build](https://www.shieldcn.dev/github/ci/santosvilanculos/hauberk.svg?variant=secondary&size=sm&font=geist&label=build&workflow=release.yml)](https://github.com/SantosVilanculos/hauberk/commits/main)
