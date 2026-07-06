@@ -6,6 +6,10 @@
 
 Instantly redirect npmjs.com package pages to npmx.dev.
 
+<p align="center">
+  <img src="docs/popup-preview.png" alt="Hauberk popup preview" width="320">
+</p>
+
 This repository is structured as a **pnpm workspace monorepo** containing separate versions optimized for Google Chrome and Mozilla Firefox.
 
 ---
@@ -49,20 +53,20 @@ hauberk/
 ## 🛠️ Workspaces & File Links
 
 ### 🌐 Google Chrome Package
-*   **[Chrome package.json](file:///home/santosvilanculos/Code/hauberk/packages/chrome/package.json)**
-*   **[Chrome manifest.json](file:///home/santosvilanculos/Code/hauberk/packages/chrome/manifest.json)**
-*   **[Chrome background.js](file:///home/santosvilanculos/Code/hauberk/packages/chrome/background.js)**
-*   **[Chrome popup.html](file:///home/santosvilanculos/Code/hauberk/packages/chrome/popup.html)**
-*   **[Chrome popup.css](file:///home/santosvilanculos/Code/hauberk/packages/chrome/popup.css)**
-*   **[Chrome popup.js](file:///home/santosvilanculos/Code/hauberk/packages/chrome/popup.js)**
+*   **[Chrome package.json](./packages/chrome/package.json)**
+*   **[Chrome manifest.json](./packages/chrome/manifest.json)**
+*   **[Chrome background.js](./packages/chrome/background.js)**
+*   **[Chrome popup.html](./packages/chrome/popup.html)**
+*   **[Chrome popup.css](./packages/chrome/popup.css)**
+*   **[Chrome popup.js](./packages/chrome/popup.js)**
 
 ### 🦊 Mozilla Firefox Package
-*   **[Firefox package.json](file:///home/santosvilanculos/Code/hauberk/packages/firefox/package.json)**
-*   **[Firefox manifest.json](file:///home/santosvilanculos/Code/hauberk/packages/firefox/manifest.json)**
-*   **[Firefox background.js](file:///home/santosvilanculos/Code/hauberk/packages/firefox/background.js)**
-*   **[Firefox popup.html](file:///home/santosvilanculos/Code/hauberk/packages/firefox/popup.html)**
-*   **[Firefox popup.css](file:///home/santosvilanculos/Code/hauberk/packages/firefox/popup.css)**
-*   **[Firefox popup.js](file:///home/santosvilanculos/Code/hauberk/packages/firefox/popup.js)**
+*   **[Firefox package.json](./packages/firefox/package.json)**
+*   **[Firefox manifest.json](./packages/firefox/manifest.json)**
+*   **[Firefox background.js](./packages/firefox/background.js)**
+*   **[Firefox popup.html](./packages/firefox/popup.html)**
+*   **[Firefox popup.css](./packages/firefox/popup.css)**
+*   **[Firefox popup.js](./packages/firefox/popup.js)**
 
 ---
 
