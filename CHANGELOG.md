@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.1] - 2026-07-06
 
+### Added
+- Added OG image (1200x630) for release social preview
+- Added Instagram square image (1080x1080) for release post
+
 ### Fixed
 - Fixed GitHub footer link in popup to point to hauberk repository
 
