@@ -38,13 +38,13 @@
       }
     ]
   },
-  "data_collection_permissions": {
-    "data_access": [],
-    "data_use": "This add-on does not collect or transmit any user data."
-  },
   "browser_specific_settings": {
     "gecko": {
-      "id": "npmx-redirector@santosvilanculos.github.io"
+      "id": "npmx-redirector@santosvilanculos.github.io",
+      "data_collection_permissions": {
+        "data_access": [],
+        "data_use": "This add-on does not collect or transmit any user data."
+      }
     }
   }
 }
